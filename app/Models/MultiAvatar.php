@@ -51,7 +51,7 @@ class MultiAvatar
     public function generate($avatarId, $sansEnv, $ver)
     {
         $themes = [];
-
+        $ff9809 = '#ff9809';
         // Robo
         $themes['00']['A']['env'] = ['#ff2f2b'];
         $themes['00']['A']['clo'] = ['#fff', '#000'];
@@ -79,8 +79,8 @@ class MultiAvatar
         $themes['01']['A']['clo'] = ['#f06', '#8e0039'];
         $themes['01']['A']['head'] = ['#85492C'];
         $themes['01']['A']['mouth'] = ['#000'];
-        $themes['01']['A']['eyes'] = ['#000', '#ff9809'];
-        $themes['01']['A']['top'] = ['#ff9809', '#ff9809', 'none', 'none'];
+        $themes['01']['A']['eyes'] = ['#000',  $ff9809];
+        $themes['01']['A']['top'] = [ $ff9809, $ff9809, 'none', 'none'];
 
         $themes['01']['B']['env'] = ['#40E83B'];
         $themes['01']['B']['clo'] = ['#00650b', '#62ce5a'];
@@ -94,7 +94,7 @@ class MultiAvatar
         $themes['01']['C']['head'] = ['#ffce8b'];
         $themes['01']['C']['mouth'] = ['#000'];
         $themes['01']['C']['eyes'] = ['#000', '#0072ff'];
-        $themes['01']['C']['top'] = ['#ff9809', 'none', '#ffc809', 'none'];
+        $themes['01']['C']['top'] = [ $ff9809, 'none', '#ffc809', 'none'];
 
         // Blonde
         $themes['02']['A']['env'] = ['#ff7520'];
@@ -215,9 +215,9 @@ class MultiAvatar
         $themes['07']['A']['top'] = ['#dd104f', '#dd104f', '#f73b6c', '#dd104f'];
 
         $themes['07']['B']['env'] = ['#181284'];
-        $themes['07']['B']['clo'] = ['#491f49', '#ff9809', '#491f49'];
+        $themes['07']['B']['clo'] = ['#491f49',  $ff9809, '#491f49'];
         $themes['07']['B']['head'] = ['#f6ba97'];
-        $themes['07']['B']['mouth'] = ['#ff9809', '#000'];
+        $themes['07']['B']['mouth'] = [$ff9809, '#000'];
         $themes['07']['B']['eyes'] = ['#c4ffe4', '#000', '#c4ffe4', '#000', '#000', '#000'];
         $themes['07']['B']['top'] = ['none', 'none', '#d6f740', '#516303'];
 
