@@ -52,7 +52,6 @@ class MultiAvatar
     {
         $themes = [];
         $ff9809 = '#ff9809';
-        // Robo
         $themes['00']['A']['env'] = ['#ff2f2b'];
         $themes['00']['A']['clo'] = ['#fff', '#000'];
         $themes['00']['A']['head'] = ['#fff'];
